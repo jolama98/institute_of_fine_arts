@@ -1,5 +1,5 @@
 import { AppState } from "../AppState.js";
-import { Art, ArtData } from "../models/Art.ts";
+import { Art } from "../models/Art.ts";
 import { api } from "./AxiosService.js";
 
 type ArtResponse = {
