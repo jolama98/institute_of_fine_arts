@@ -3,9 +3,10 @@ import { baseURL } from '../env.ts'
 import { logger } from '../utils/Logger.ts'
 
 export const api = Axios.create({
-  baseURL,
+  baseURL: 'https://sandbox.codeworksacademy.com/',
   timeout: 8000
 })
+
 
 api.interceptors.request.use(config => config, handleAxiosError)
 api.interceptors.response.use(response => response, handleAxiosError)
