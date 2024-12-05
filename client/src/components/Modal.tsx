@@ -2,10 +2,11 @@ type ModalProps = {
   id: string,
   slug: string,
   children: React.ReactNode
+  imgUrls: string
 
 }
 
-export default function Modal({ id, slug, children }: ModalProps) {
+export default function Modal({ id, slug, children, imgUrls }: ModalProps) {
 
   return (
 
@@ -17,7 +18,7 @@ export default function Modal({ id, slug, children }: ModalProps) {
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div className="modal-body">
-            {children}
+            <img src={imgUrls} alt="" />
           </div>
         </div>
       </div>
