@@ -4,7 +4,7 @@ import { logger } from "../utils/Logger"
 import Pop from "../utils/Pop"
 import ArtList from "../components/ArtList"
 import { AppState } from "../AppState"
-
+import Modal from "../components/Modal"
 
 export default function HomePage() {
 
@@ -32,6 +32,10 @@ export default function HomePage() {
           <ArtList art={AppState.art} />
         </div>
       </div>
-    </div>
+
+      <Modal id="artModal" slug={AppState.activeArt?.slug || ''} >
+        <ArtModalContent />
+      </Modal>
+    </div >
   )
 }

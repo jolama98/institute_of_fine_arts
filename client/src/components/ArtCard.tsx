@@ -17,7 +17,7 @@ export default function ArtCard({ art }: ArtCardProps) {
   return (
 
     <div className="ArdCard card">
-      <div className="card-img-top">
+      <div className="card-img-top" data-bs-toggle="modal" data-bs-target="#atrModal" onClick={setActive}>
         <img className="img-fluid " src={art.smallImg} alt={art.slug} />
       </div>
     </div>

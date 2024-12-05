@@ -1,7 +1,7 @@
 export type ArtData = {
   id: string
   slug: string
-  imgUrls: {small: string}
+  imgUrls: { small: string }
   attribution: string
   description: string
 }
@@ -18,5 +18,6 @@ export class Art {
     this.attribution = data.attribution
     this.description = data.description
   }
+
 }
 
